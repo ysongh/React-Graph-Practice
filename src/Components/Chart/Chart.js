@@ -8,9 +8,9 @@ class Chart extends Component {
     super(props);
     this.state = {
         data: [
-            { key: '20%', value: 100, color: '#3cb371', name: 'Doing Good' },
+            { key: '20%', value: 100, color: '#3cb371', name: 'Energy Save' },
             { key: '55%', value: 200, color: '#ffa500' , name: 'Need Improvement' },
-            { key: '10%', value: 50, color: '#ff0000' , name: 'Not So Good' }
+            { key: '10%', value: 50, color: '#ff0000' , name: 'Danger' }
           ]
     };
   }
@@ -24,7 +24,7 @@ class Chart extends Component {
     ];
       
     return (
-      <div>
+      <div style={{'margin-top': '20px'}}>
         <PieChart
           labels
           size={400}
